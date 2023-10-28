@@ -15,24 +15,26 @@
     <div class="container">
       <div class="grid-container">
         <header class="header">
-          <section class="search-bar">
-            <img
-              class="icon"
-              width="40px"
-              src="/admin-dashboard/icons/magnifying-glass-svgrepo-com.svg"
-              alt=""
-            /><input type="search" name="search" id="search" />
-            <form action="" class="search">
-              <label for="search" class="search"></label>
-            </form>
-            <div class="chime">
+          <section class="header-top">
+            <div class="search-bar">
               <img
                 class="icon"
-                src="/admin-dashboard/icons/bell-svgrepo-com.svg"
+                width="40px"
+                src="/admin-dashboard/icons/magnifying-glass-svgrepo-com.svg"
                 alt=""
-              />
+              /><input type="search" name="search" id="search" />
+              <form action="" class="search">
+                <label for="search" class="search"></label>
+              </form>
             </div>
-            <div class="user-av">
+            <div class="user-av-second">
+              <div class="chime">
+                <img
+                  class="icon"
+                  src="/admin-dashboard/icons/bell-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
               <img
                 class="icon"
                 src="/admin-dashboard/icons/avatar-icon.svg"
@@ -42,18 +44,169 @@
             </div>
           </section>
           <section class="user-chime">
-            <div class="user-av">
-              <img
-                class="icon"
-                src="/admin-dashboard/icons/avatar-icon.svg"
-                alt=""
-              />
+            <div class="user-greet">
+              <div class="user-av-main">
+                <img
+                  class="icon"
+                  src="/admin-dashboard/icons/avatar-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="message">Hi there,</p>
+              <p class="username">Morgan Oakley (@morgan)</p>
             </div>
-            <p class="message">Hi there,</p>
-            <p class="username">Morgan Oakley (@morgan)</p>
+            <div class="crud">
+              <button class="action-btn">New</button>
+              <button class="action-btn">Upload</button>
+              <button class="action-btn">Share</button>
+            </div>
           </section>
         </header>
-        <section role="admin notifications" class="body"></section>
+        <section role="admin notifications" class="admin-body">
+          <div class="admin-tasks">
+            <div class="admin-card">
+              <div class="title">Email Login Issue</div>
+              <div class="subtitle">"Encountering Email Login Error"</div>
+              <div class="description">
+                "I'm encountering difficulties when trying to access my email.
+                Each time I attempt to log in, I'm confronted with an 'invalid
+                password' error message. This issue is preventing me from
+                accessing important emails and conducting my work effectively. I
+                need assistance to resolve this login problem promptly."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+            <div class="admin-card">
+              <div class="title">Computer Performance Problem</div>
+              <div class="subtitle">
+                "Sluggish Computer with Frequent Freezes"
+              </div>
+              <div class="description">
+                "My computer's performance has taken a nosedive - it's sluggish,
+                and I experience frequent freezes when running multiple
+                applications. This has significantly hindered my productivity.
+                I'm looking for help in diagnosing and rectifying this
+                performance problem to ensure my computer functions smoothly."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <div class="title">Office Wi-Fi Network Troubles</div>
+              <div class="subtitle">"Office Wi-Fi Network Instability"</div>
+              <div class="description">
+                "Our office is grappling with a persistently unreliable Wi-Fi
+                network. Some devices can't even connect, and those that do
+                experience frequent disconnections. The erratic network is
+                causing disruptions to our work. We urgently require support to
+                investigate and resolve the network issues."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <div class="title">File Recovery Request</div>
+              <div class="subtitle">
+                "Critical File Deletion - Backup Recovery Needed"
+              </div>
+              <div class="description">
+                "I made an inadvertent error and deleted an essential file from
+                my system. To mitigate the impact of this loss, I'm in need of
+                assistance to recover the file from our backup system. Swift
+                action is crucial to ensure minimal disruption to my work."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <div class="title">Printer Connectivity Problem</div>
+              <div class="subtitle">
+                "Printer Not Responding to Print Requests"
+              </div>
+              <div class="description">
+                "My printer, despite being correctly connected, is not
+                responding to any print requests. This problem is causing
+                significant delays in my work. I'm seeking support to identify
+                and fix the issue with my unresponsive printer."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <div class="title">Suspicious Email Handling</div>
+              <div class="subtitle">"Handling Suspicious Email"</div>
+              <div class="description">
+                "I've received an email that appears suspicious, potentially a
+                phishing attempt. I'm unsure about how to handle this situation
+                and need expert guidance to assess the legitimacy of the email
+                and take appropriate action to safeguard our data and systems."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <div class="title">Website Outage</div>
+              <div class="subtitle">"Urgent Website Outage"</div>
+              <div class="description">
+                "Our company's website is currently inaccessible, displaying a
+                503 error. This outage is impacting our online presence and
+                causing inconvenience to our customers. Immediate attention is
+                required to diagnose and resolve the issue to restore our
+                website's functionality."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+
+            <div class="admin-card">
+              <div class="title">Software Update Installation Error</div>
+              <div class="subtitle">
+                "Software Update Installation Error - Insufficient Disk Space"
+              </div>
+              <div class="description">
+                "My attempts to install a critical software update on my laptop
+                have been consistently thwarted by an error message citing
+                'insufficient disk space.' This update is essential for security
+                and functionality. I need assistance in resolving this issue and
+                successfully completing the installation."
+              </div>
+              <div class="card-actions">
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+                <div class="card-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="notifications"></div>
+          <div class="trending"></div>
+        </section>
         <nav class="nav">
           <h1 id="logo">
             <img
