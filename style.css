@@ -211,6 +211,15 @@ li {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   gap: 15px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.admin-body::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .admin-tasks {
@@ -220,9 +229,6 @@ li {
   grid-column: 1/2;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 25px repeat(auto-fit, 1fr);
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
 .admin-tasks p {
@@ -230,12 +236,6 @@ li {
   grid-row: 1/2;
   padding: 0;
   margin: 0;
-}
-
-.admin-tasks::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0;
 }
 
 .admin-card {
