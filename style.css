@@ -209,7 +209,7 @@ li {
   grid-row: 2/7;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 1fr;
   gap: 15px;
 }
 
@@ -218,9 +218,8 @@ li {
   display: grid;
   gap: 15px;
   grid-column: 1/2;
-  grid-row: 1/3;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 25px repeat(auto-fit, 25%);
+  grid-template-rows: 25px repeat(auto-fit, 1fr);
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -280,6 +279,10 @@ li {
 
 .announcements {
   padding: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  gap: 15px;
 }
 
 .announcements-container {
@@ -309,7 +312,32 @@ li {
 
 /* trending */
 
-.trend-item {
-  color: var(--st-color);
+.trending > p {
+  padding: 10px;
+}
+
+.trending-container {
   background-color: var(--pr-color);
+  border-radius: 10px;
+}
+
+.trend-item {
+  padding: 10px;
+  color: var(--st-color);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.trend-item p {
+  font-size: 16px;
+}
+
+.trend-item img {
+  width: 50px;
+}
+
+.user-name p {
+  padding: 4px;
 }
